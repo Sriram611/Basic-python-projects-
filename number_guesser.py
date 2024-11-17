@@ -2,8 +2,10 @@ import random
 
 print("This is a number gussing game. \nThe computer make a random number and you need to gess what the no is. \nThe no of time you gessed to make it right will be displayed on the screen. ")
 
-top_of_range = input("ype a number between(1-10): ")
+#asking the user to type the number so that computer can generate random number
+top_of_range = input("Type a number between(1-10): ")
 
+#checking the user input whether it is a no and greater than 0
 if top_of_range.isdigit():
     top_of_range = int(top_of_range)
 
@@ -15,6 +17,7 @@ else:
     print("please type a next time")
     quit()
 
+#generating random number and checking whether the user guess is above or below the random number
 random_no = random.randint(1,top_of_range)
 guesses = 0
 while True:
