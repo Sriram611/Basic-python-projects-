@@ -14,7 +14,7 @@ if top_of_range.isdigit():
         quit()
 
 else:
-    print("please type a next time")
+    print("please type a number next time")
     quit()
 
 #generating random number and checking whether the user guess is above or below the random number
